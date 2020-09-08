@@ -19,7 +19,8 @@
         android:title="@string/app_label">
     <PreferenceCategory
             android:key="medical_info"
-            android:title="@string/medical_info_title">
+            android:title="@string/medical_info_title"
+            style="@style/PreferenceCategory">
         <com.android.emergency.preferences.EmergencyNamePreference
             android:icon="@drawable/ic_account_circle_filled_24dp"
             android:key="name"
@@ -93,7 +94,8 @@
 
     <com.android.emergency.preferences.EmergencyContactsPreference
             android:key="emergency_contacts"
-            android:title="@string/emergency_contacts_title"/>
+            android:title="@string/emergency_contacts_title"
+            style="@style/PreferenceCategory"/>
     <Preference
         android:key="add_emergency_contact"
         android:icon="@drawable/ic_add_24dp"
