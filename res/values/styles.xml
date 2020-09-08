@@ -36,6 +36,9 @@
         <item name="colorAccent">@color/accent_color_dark</item>
         <item name="colorControlNormal">?attr/textColorActionBar</item>
     </style>
+    <style name="ActionBarToolbarTitleAppearance" parent="android:TextAppearance.Material.Title">
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+    </style>
 
     <!-- Tabs -->
     <style name="AppTheme.TabLayout" parent="Widget.Design.TabLayout">

@@ -13,16 +13,14 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<Toolbar android:id="@+id/action_bar"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:title="@string/app_label"
-    android:layout_height="wrap_content"
-    android:background="?attr/colorPrimary"
-    android:elevation="@dimen/tab_elevation"
-    android:minHeight="@dimen/action_bar_size"
-    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-    android:theme="@style/ActionBarThemeOverlay"
-    android:titleMarginStart="16dp"
-    android:titleTextColor="?attr/textColorActionBar"
-    android:titleTextAppearance="@style/ActionBarToolbarTitleAppearance" />
+<resources>
+    <!-- Base emergency theme. -->
+    <style name="AppThemeEmergency" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:preferenceCategoryStyle">@style/AppTheme.PreferenceCategoryStyle</item>
+        <item name="colorPrimaryDark">@color/emergency_primary_dark</item>
+        <item name="colorPrimary">@color/emergency_primary</item>
+        <item name="textColorActionBar">@color/tab_text_color</item>
+        <item name="tabIndicatorColor">@color/emergency_accent</item>
+        <item name="preferenceTheme">@style/PreferenceTheme</item>
+    </style>
+</resources>
